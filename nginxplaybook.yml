@@ -1,5 +1,5 @@
 ---
-- hosts: abc
+- hosts: localhost
   become: yes
   roles:
    - nginxrole
