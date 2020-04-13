@@ -1,0 +1,6 @@
+---
+- hosts: abc
+  become: yes
+  roles:
+   - nginxrole
+

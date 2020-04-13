@@ -1,0 +1,15 @@
+---
+# tasks file for nginxrole
+- name: installing nginx
+  apt:
+    update_cache: true
+    name: nginx
+    state: latest
+
+- name: copy index file
+  template:
+    src: index.html
+    dest: /var/www/html/index.html
+
+  notify: resart_nginx
+
